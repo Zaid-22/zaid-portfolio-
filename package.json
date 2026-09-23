@@ -1,0 +1,11 @@
+{
+  "name": "zaid-portfolio",
+  "version": "1.0.0",
+  "description": "Zaid Asaireh \u2014 full-stack developer portfolio",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node dev-server.mjs",
+    "start": "node dev-server.mjs"
+  }
+}
