@@ -1,4 +1,4 @@
-node_modules/
+node_modules
 .vercel/
 .openai/
 .env
@@ -6,3 +6,6 @@ node_modules/
 !.env.example
 .DS_Store
 *.log
+artifacts/
+test-results/
+playwright-report/

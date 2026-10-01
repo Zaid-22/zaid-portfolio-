@@ -6,6 +6,17 @@
   "type": "module",
   "scripts": {
     "dev": "node dev-server.mjs",
-    "start": "node dev-server.mjs"
+    "start": "node dev-server.mjs",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "check": "node --check dist/script.js && node --check dev-server.mjs && node scripts/check-site.mjs && npm run format:check",
+    "check:links": "node scripts/check-site.mjs --external",
+    "test": "playwright test",
+    "optimize:images": "node scripts/optimize-images.mjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0",
+    "prettier": "3.9.9",
+    "sharp": "0.35.5"
   }
 }

@@ -1,0 +1,40 @@
+name: Portfolio quality
+
+on:
+  push:
+    branches: [main, portfolio-improvements]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - id: static-check
+        continue-on-error: true
+        run: npm run check
+      - run: npx playwright install --with-deps chromium
+      - id: browser-check
+        continue-on-error: true
+        run: npm test
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: portfolio-browser-review
+          path: |
+            artifacts/
+            playwright-report/
+            test-results/
+          retention-days: 7
+
+      - name: Require all checks to pass
+        if: always() && (steps.static-check.outcome != 'success' || steps.browser-check.outcome != 'success')
+        run: exit 1
