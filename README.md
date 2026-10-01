@@ -2,6 +2,8 @@
 
 [View the live portfolio](https://zaid-portfolio-phi.vercel.app/)
 
+![Desktop preview of Zaid Asaireh’s portfolio](docs/portfolio-preview.jpg)
+
 A personal portfolio for a full-stack developer focused on ASP.NET Core, React, Next.js, JavaScript, TypeScript, and SQL Server. Built with semantic HTML, responsive CSS, and a small amount of JavaScript; no third-party runtime dependencies.
 
 ## What is included

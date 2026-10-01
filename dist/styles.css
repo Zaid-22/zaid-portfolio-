@@ -1183,10 +1183,10 @@ summary:focus-visible {
     font-size: clamp(3.5rem, 8.4vw, 6rem);
   }
   .hero-art img {
-    width: 120%;
-    height: 120%;
-    left: -10%;
-    top: -10%;
+    width: 112%;
+    height: 112%;
+    left: -6%;
+    top: -6%;
   }
   .hero-description {
     max-width: 420px;
@@ -1272,10 +1272,10 @@ summary:focus-visible {
     margin-top: 23px;
   }
   .hero-art img {
-    width: 133%;
-    height: 133%;
-    left: -18%;
-    top: -15%;
+    width: 118%;
+    height: 118%;
+    left: -9%;
+    top: -9%;
   }
   .art-label {
     left: 0;
