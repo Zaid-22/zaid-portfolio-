@@ -1,10 +1,11 @@
 # Zaid Asaireh — Portfolio
 
-A responsive personal portfolio for a full-stack developer focused on ASP.NET Core, React, TypeScript, and SQL Server.
+A responsive personal portfolio for a full-stack developer focused on ASP.NET Core, React, JavaScript, TypeScript, and SQL Server.
 
 ## Features
 
-- Selected projects: TijarahJo and CarePoint, with feature summaries and expandable engineering notes.
+- Selected projects: TijarahJo, CarePoint, and StockPilot, with feature summaries and expandable engineering notes.
+- TijarahJo live demo link with a sample-data notice; StockPilot links to its source repository.
 - Links to the implementation and tests in each project repository.
 - Responsive navigation, keyboard focus states, and reduced-motion support.
 - Technical skills, education, training, and contact links.
